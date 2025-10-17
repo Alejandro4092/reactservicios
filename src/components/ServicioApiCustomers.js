@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import axios from "axios" 
+import Global from '../Gloabal';
 
 export default class ServicioApiCustomers extends Component {
   state={
     customers:[]
   }
   customers=[];
-  url="https://services.odata.org/V4/Northwind/Northwind.svc/Customers" ;
+  url=Global.urlNorthwind+"Customers" ;
 
   loadCustomers=()=>{
     console.log("Antes del Servicio");

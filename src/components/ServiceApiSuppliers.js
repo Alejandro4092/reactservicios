@@ -1,21 +1,21 @@
 import React, { Component } from 'react'
 import axios from "axios"
+import Global from '../Gloabal';
 
 export default class ServiceApiSuppliers extends Component {
     cajaid = React.createRef();
 
-    url = "https://services.odata.org/V4/Northwind/Northwind.svc/Suppliers";
+    url = Global.urlNorthwind;
 
     state = {
         suppliers: [],
         supplier: []
     }
 
-
-
     loadSuppliers = () => {
         console.log("Cargando Suppliers");
-        axios.get(this.url).then(response => {
+        var request="Suppliers"
+        axios.get(this.url+request).then(response => {
             console.log(response.data)
             this.setState({
                 suppliers: response.data.value
@@ -23,10 +23,24 @@ export default class ServiceApiSuppliers extends Component {
         });
         console.log("Despues del servicio");
     }
+    //Findsuplier id profe
+    // findSupplierId=(event)=>{
+    //   event.preventDefault();
+    //   let idsupplier=parseInt(this.cajaid.current.value)
+    //   //realizamos la peticion de nuevo a todos los provedoress
+    //   axios.get(this.url).then(response=>{
+    //     if(supplier.SupplierID==idSupplier){
+    //       this.setState({
+    //         supplier:supplier
+    //       })
+    //       break;
+    //     }
+    //   })
+    // }
 
     loadDatos = (event) => {
         event.preventDefault();
-        let userid = this.cajaid.current.value; // ✅ convertir a número
+        let userid = this.cajaid.current.value; 
         let provedor = this.state.suppliers.find(supplier => supplier.SupplierID == userid);
         console.log(userid);
         this.setState({
@@ -49,16 +63,20 @@ export default class ServiceApiSuppliers extends Component {
                     <input type='text' ref={this.cajaid}></input>
                     <button>Buscar Supplier</button>
                 </form>
+                <div>
+                  <ul>
 
                 {
                     this.state.suppliers.map((suppliers, index) => {
                         return (
-                            <h3 key={index} style={{ color: "blue" }}>
+                            <li key={index} style={{ color: "blue" }}>
                                 {suppliers.SupplierID} {suppliers.ContactName}
-                            </h3>
+                            </li>
                         );
                     })
                 }
+                </ul>
+                </div>
 
                 
                 {this.state.supplier && (
