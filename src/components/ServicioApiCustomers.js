@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from "axios" 
-import Global from '../Gloabal';
+import Global from '../Global';
 
 export default class ServicioApiCustomers extends Component {
   state={

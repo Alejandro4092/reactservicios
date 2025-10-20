@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Global from '../Gloabal'
+import Global from '../Global'
 import axios from 'axios'
 
 
