@@ -39,6 +39,11 @@ export default class Collatz extends Component {
       this.generarCollatzDesdeNumero(this.props.numero);
     }
   }
+  componentDidUpdate(oldProps) {
+    if (oldProps.numero !== this.props.numero) {
+      this.generarCollatzDesdeNumero(this.props.numero);
+    }
+  }
 
 
   render() {

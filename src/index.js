@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -13,17 +17,19 @@ import Cursos from './components/ejemplocomunicacion/Cursos';
 import TablaMultiplicar from './components/TablaMultiplicar';
 import AppRouter from './components/Router';
 import MenuRutas from './components/MenuRutas';
+import Router from './components/Router';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    
     <div style={{margin:"20px",width:"100px"}}>
-        <div />
-         <MenuRutas />
-        
+      
+         
+    <Router/>
    
-    <AppRouter />
+    
     </div>
 );
 
