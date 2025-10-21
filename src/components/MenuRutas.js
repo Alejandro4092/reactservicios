@@ -5,20 +5,20 @@
 */
 
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default class MenuRutas extends Component {
   render() {
     return (
       <div>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href='/tabla/21'>Tabla de Multiplicar 21</a></li>
-          <li><a href='/tabla/7'>Tabla de Multiplicar 7</a></li>
-          <li><a href='/tabla/33'>Tabla de Multiplicar 33</a></li>
-          <li><a href='/collatz/21'>Collatz 21</a></li>
-          <li><a href='/collatz/7'>Collatz 7</a></li>
-          <li><a href='/collatz/33'>Collatz 33</a></li>
-         
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to='/tabla/21'>Tabla de Multiplicar 21</NavLink></li>
+          <li><NavLink to='/tabla/7'>Tabla de Multiplicar 7</NavLink></li>
+          <li><NavLink to='/tabla/33'>Tabla de Multiplicar 33</NavLink></li>
+          <li><NavLink to='/collatz/21'>Collatz 21</NavLink></li>
+          <li><NavLink to='/collatz/7'>Collatz 7</NavLink></li>
+          <li><NavLink to='/collatz/33'>Collatz 33</NavLink></li>
         </ul>
       </div>
     )

@@ -30,6 +30,12 @@ export default class TablaMultiplicar extends Component {
     componentDidMount=()=>{
         this.generarTablaMultiplicar();
     }
+    componentDidUpdate=(oldProps)=>{
+        //Comprobamos si hemos recibido un nuevo numero en las props
+        if(oldProps.numero!==this.props.numero){
+            this.generarTablaMultiplicar();
+        }
+    }
 
         render() {
     return (
