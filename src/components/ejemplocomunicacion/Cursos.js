@@ -1,3 +1,9 @@
+
+/*
+    Cursos.js
+    Componente que consume una API para obtener cursos y permite seleccionar uno para mostrar los alumnos asociados.
+    Utiliza el componente Alumnos para listar alumnos por curso y gestiona la selección de alumno.
+*/
 import React, { Component } from 'react'
 import axios from "axios"
 import Global from '../../Global';

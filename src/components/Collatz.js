@@ -1,3 +1,8 @@
+/*
+  Collatz.js
+  Componente que genera y muestra la secuencia de Collatz para un número recibido por props o introducido manualmente.
+  Utiliza estado local para almacenar y renderizar la secuencia.
+*/
 import React, { Component } from 'react'
 
 export default class Collatz extends Component {
@@ -46,6 +51,12 @@ export default class Collatz extends Component {
       <div>
         <h1>Conjetura Collatz</h1>
         
+        /*
+          Collatz.js
+          Componente que genera y muestra la secuencia de Collatz para un número recibido por props o introducido manualmente.
+          Utiliza estado local para almacenar y renderizar la secuencia.
+        */
+        import React, { Component } from 'react'
         {this.props.numero ? (
           <h3>número {this.props.numero}</h3>
         ) : (

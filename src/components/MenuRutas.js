@@ -1,3 +1,9 @@
+
+/*
+  MenuRutas.js
+  Componente de menú de navegación principal. Proporciona enlaces rápidos a rutas de ejemplos y páginas principales.
+*/
+
 import React, { Component } from 'react'
 
 export default class MenuRutas extends Component {

@@ -1,3 +1,7 @@
+/*
+  App.js
+  Componente principal de la aplicación React. Renderiza la estructura base y el logo de React.
+*/
 import logo from './logo.svg';
 import './App.css';
 

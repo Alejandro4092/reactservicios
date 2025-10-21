@@ -1,3 +1,7 @@
+/*
+  ServiceApiSuppliers.js
+  Componente que consume la API de Northwind para mostrar y buscar proveedores (suppliers).
+*/
 import React, { Component } from 'react'
 import axios from "axios"
 import Global from '../Global';

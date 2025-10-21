@@ -1,4 +1,8 @@
 import React from 'react';
+/*
+    index.js
+    Punto de entrada de la aplicación React. Renderiza el componente principal y configura rutas y menús.
+*/
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';

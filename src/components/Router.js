@@ -1,3 +1,8 @@
+
+/*
+  Router.js
+  Enrutador principal de la aplicación. Define rutas dinámicas y estáticas usando react-router-dom para los distintos componentes.
+*/
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Home'

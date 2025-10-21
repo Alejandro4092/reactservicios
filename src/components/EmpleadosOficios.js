@@ -16,6 +16,10 @@ export default class EmpleadosOficios extends Component {
         axios.get(this.url+request).then(response=>{
             console.log("leyendo oficios");
             this.setState({
+                /*
+                  EmpleadosOficios.js
+                  Componente que permite seleccionar un oficio y mostrar empleados asociados usando una API.
+                */
                 empleados:response.data
             })
         })

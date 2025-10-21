@@ -1,3 +1,7 @@
+/*
+  EmpleadosDepartamento.js
+  Componente que permite buscar y mostrar empleados de un departamento específico usando una API.
+*/
 import React, { Component } from 'react'
 import Global from '../Global'
 import axios from 'axios'

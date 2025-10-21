@@ -1,3 +1,10 @@
+
+/*
+    TablaMultiplicar.js
+    Componente que genera y muestra la tabla de multiplicar de un número recibido por props.
+    Utiliza estado local para almacenar y renderizar los resultados.
+*/
+
 import React, { Component } from 'react'
 
 export default class TablaMultiplicar extends Component {

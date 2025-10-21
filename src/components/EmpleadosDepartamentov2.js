@@ -1,3 +1,7 @@
+/*
+  EmpleadosDepartamentov2.js
+  Variante que permite seleccionar un departamento con select de una lista y mostrar sus empleados usando una API.
+*/
 import React, { Component } from 'react'
 import Global from '../Global'
 import axios from 'axios'

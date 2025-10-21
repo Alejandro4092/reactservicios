@@ -1,3 +1,7 @@
+/*
+  Empleados.js
+  Componente que muestra la lista de empleados de un departamento específico usando una API.
+*/
 import React, { Component } from 'react'
 import axios from "axios" 
 import Global from '../../Global';

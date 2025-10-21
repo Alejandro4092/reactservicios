@@ -1,3 +1,7 @@
+/*
+  NotFound.js
+  Componente que muestra una página de error 404 personalizada cuando la ruta no existe.
+*/
 import React, { Component } from 'react'
 
 export default class NotFound extends Component {

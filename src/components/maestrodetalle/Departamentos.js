@@ -1,3 +1,7 @@
+/*
+    Departamentos.js
+    Componente que permite seleccionar un departamento y mostrar los empleados asociados usando una API.
+*/
 import React, { Component } from 'react'
 import axios from "axios" 
 import Global from '../../Global';

@@ -1,3 +1,9 @@
+
+/*
+    Alumnos.js
+    Componente que recibe el id de un curso y muestra la lista de alumnos asociados.
+    Permite seleccionar un alumno y comunica la selección al componente padre (Cursos).
+*/
 import React, { Component } from 'react';
 import Global from '../../Global';
 import axios from "axios";
