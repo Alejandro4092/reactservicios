@@ -22,16 +22,17 @@ import TablaMultiplicar from './components/TablaMultiplicar';
 import AppRouter from './components/Router';
 import MenuRutas from './components/MenuRutas';
 import Router from './components/Router';
+import HospitalesMultiple from './components/HospitalesMultiple';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    
-    <div style={{margin:"20px",width:"100px"}}>
+    <div >
       
          
-    <Router/>
+    <HospitalesMultiple/>
    
     
     </div>
