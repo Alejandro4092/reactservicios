@@ -1,3 +1,10 @@
+/*
+    HospitalesMultiple.js
+    Componente que permite seleccionar múltiples hospitales desde una lista y:
+    - Mostrar los trabajadores relacionados (componente `Trabajadores`).
+    - Enviar una petición para incrementar salarios de trabajadores en hospitales seleccionados.
+    Consume la API definida en `Global.apiTrabajadores` y ofrece controles para selección múltiple e incremento de salario.
+*/
 import React, { Component } from 'react'
 import Trabajadores from './Trabajadores'
 import Global from '../Global';

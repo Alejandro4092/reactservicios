@@ -1,7 +1,13 @@
 import React from 'react';
 /*
     index.js
-    Punto de entrada de la aplicación React. Renderiza el componente principal y configura rutas y menús.
+    Punto de entrada de la aplicación React.
+    Nota (cambios añadidos hoy):
+    - Se añadió Bootstrap (CSS y JS) para estilos y componentes.
+    - Se importaron jQuery y Popper para compatibilidad con algunas funcionalidades de Bootstrap.
+    - Se incorporó y se está renderizando el componente `HospitalesMultiple` en el root, que consume
+        una API para gestionar hospitales y sus trabajadores.
+    Este archivo inicializa la raíz React y renderiza el componente principal usado actualmente (HospitalesMultiple).
 */
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
