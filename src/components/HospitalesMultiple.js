@@ -49,7 +49,8 @@ export default class HospitalesMultiple extends Component {
         
         
     }
-    incrementarSalario=()=>{
+    incrementarSalario=(event)=>{
+        event.preventDefault();
             let request="api/trabajadores/UpdateSalarioTrabajadoreshospitales?";
             let incremento=this.cajaIncremento.current.value;
             let idhospitales=this.state.hospitalesSeleccionados;
@@ -57,10 +58,10 @@ export default class HospitalesMultiple extends Component {
             for(var id of idhospitales){
                 data+="idhospital="+id+"&";
             }
-            data+="incremento="+incremento;
+            data=data.substring(0,data.length-1);
             console.log("Data: "+data);
             axios.put(this.url+request+data).then(response=>{
-                console.log("Salarios incrementados");
+                console.log(data);
               
             })
         }
@@ -86,9 +87,11 @@ export default class HospitalesMultiple extends Component {
                     <button onClick={this.getHospitalesSeleccionados} className='btn btn-warning'>Mostrar trabajadores</button>
                     
                 </form>
+                <form>
                 <label>Incrementar Salario</label>
                 <input type="text" ref={this.cajaIncremento}/>
                 <button className='btn btn-info' onClick={this.incrementarSalario}>Incrementar</button>
+                </form>
                 {
                     this.state.hospitalesSeleccionados.length !=0 && 
                     <Trabajadores idhospitales={this.state.hospitalesSeleccionados} />
